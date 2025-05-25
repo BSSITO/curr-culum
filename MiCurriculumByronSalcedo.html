@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byron Saez | Desarrollador Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+            line-height: 1.6;
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Ancho máximo para pantallas grandes */
+            margin: 0 auto; /* Centrar el contenedor */
+            background: #222; /* Fondo gris oscuro para el contenedor */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        header {
+            background: #333; /* Fondo del encabezado gris oscuro */
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+            align-items: center;
+            color: white;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid white; /* Borde blanco */
+            margin-right: 20px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-content {
+            flex: 1; /* Permitir que el contenido del encabezado ocupe el espacio restante */
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .header-content h2 {
+            margin: 5px 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .main-content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr; /* Una columna por defecto */
+            gap: 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            color: #fff; /* Títulos de sección en blanco */
+            font-size: 18pt;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #fff; /* Línea inferior blanca */
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            font-size: 12pt;
+            margin-bottom: 8px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            color: #fff; /* Títulos de experiencia en blanco */
+            font-size: 14pt;
+        }
+
+        .date {
+            color: #ccc; /* Color gris claro para las fechas */
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .skill-level {
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0; /* Color de fondo de la barra de progreso */
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .progress {
+            height: 100%;
+            background: #4caf50; /* Color verde para la barra de progreso */
+            border-radius: 4px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: 2fr 1fr; /* Dos columnas en pantallas más grandes */
+            }
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            header {
+                background: #333 !important;
+                color: white !important;
+            }
+
+            .progress {
+                background: #4caf50 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-image">
+                <img src="1740504540235.jpg" alt="Byron Saez">
+            </div>
+            <div class="header-content">
+                <h1>Byron Saez</h1>
+                <h2>Desarrollador Web Junior</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Manises, Valencia, España</p>
+                    <p><i class="fas fa-phone"></i> +34 611 430 928</p>
+                    <p><i class="fas fa-envelope"></i> byronsaez345@gmail.com</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">Perfil Profesional</h2>
+                    <p>Desarrollador Web Junior con sólida formación en tecnologías front-end y back-end. Especializado en crear soluciones web modernas y responsivas. Apasionado por las nuevas tecnologías y el aprendizaje continuo. Busco una oportunidad para aplicar mis conocimientos y crecer profesionalmente en un entorno dinámico.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Experiencia Profesional</h2>
+                    <div class="experience-item">
+                        <h3>Media Markt - Prácticas en Ventas y Soporte Técnico</h3>
+                        <p class="date">Marzo 2022 - Junio 2022</p>
+                        <ul>
+                            <li>Asesoramiento técnico personalizado a clientes sobre productos tecnológicos</li>
+                            <li>Resolución de incidencias técnicas y configuración de dispositivos</li>
+                            <li>Gestión de inventario y pedidos en el departamento de informática</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Instituto IES - Ayudante de Profesor</h3>
+                        <p class="date">Septiembre 2021 - Diciembre 2021</p>
+                        <ul>
+                            <li>Apoyo en la impartición de clases prácticas de informática</li>
+                            <li>Desarrollo de material didáctico para estudiantes</li>                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Formación Académica</h2>
+                    <div class="experience-item">
+                        <h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
+                        <p class="date">2022 - Actualidad</p>
+                        <p>IES Rodrigo Botet, Manises</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
+                        <p class="date">2020 - 2022</p>
+                        <p>Solvam, Quart de Poblet</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Educación Secundaria Obligatoria (ESO)</h3>
+                        <p class="date">2016 - 2020</p>
+                        <p>Colegio Santo Tomás Aquino, Paterna</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <div class="skill-level">
+                        <span>HTML5/CSS3</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-level">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-level">
+                        <span>PHP</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-level">
+                        <span>MySQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Idiomas</h2>
+                    <div class="skill-level">
+                        <span>Español</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-level">
+                        <span>Valenciano</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-level">
+                        <span>Inglés</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Competencias</h2>
+                    <ul>
+                        <li>Metodologías Ágiles</li>
+                        <li>Control de versiones (Git)</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Comunicación efectiva</li>
+                        <li>Aprendizaje rápido</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
